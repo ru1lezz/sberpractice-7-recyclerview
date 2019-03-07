@@ -26,7 +26,7 @@ public class DiffUtilCallback extends DiffUtil.Callback {
 
     @Override
     public boolean areItemsTheSame(int i, int i1) {
-        return false;
+        return oldList.get(i) == newList.get(i1);
     }
 
     @Override
